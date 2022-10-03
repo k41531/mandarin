@@ -1,13 +1,9 @@
 import Markdoc from "markdoc";
 import React from "preact/compat";
 
-export function Paper() {
-  const doc = `
-  # Hello world.
-  > My first Markdoc page
-  `;
-  
-  const ast = Markdoc.parse(doc);
+export function Page(props: { doc:string }) {
+  console.log(props.doc.markdown);
+  const ast = Markdoc.parse(props.doc);
   
   const content = Markdoc.transform(ast);
   

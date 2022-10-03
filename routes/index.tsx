@@ -1,9 +1,9 @@
-import { Paper } from "../components/Paper.tsx";
+import { Page } from "../components/Page.tsx";
 
 export default function Home() { 
   return (
     <div>
-      <Paper />
+      <Page doc="# Home" />
     </div>
   );
 }
