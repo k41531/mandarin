@@ -19,11 +19,10 @@ export const handler: Handlers = {
   },
 };
 
-export default function Greet(props: PageProps<Data> ) {
-  console.log(props.data);
+export default function Markdown(props: PageProps<Data> ) {
   return (
     <div>
       <Page doc={props.data.markdown} />
     </div>
-    );
+  );
 }
