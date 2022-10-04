@@ -1,4 +1,5 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
+import { Head } from "$fresh/runtime.ts";
 import { Page } from "../components/Page.tsx";
 
 interface Data {
@@ -21,8 +22,15 @@ export const handler: Handlers = {
 
 export default function Markdown(props: PageProps<Data> ) {
   return (
-    <div>
-      <Page doc={props.data.markdown} />
-    </div>
+    <>
+    <Head>
+      <link rel="stylesheet" href={`/gfm.css?build=${__FRSH_BUILD_ID}`} />
+    </Head>
+    <main class="py-8 overflow-hidden"> 
+      <div class="mt-6 markdown-body">
+        <Page doc={props.data.markdown} />
+      </div>
+    </main>
+    </>
   );
 }
