@@ -1,7 +1,7 @@
 {
   "imports": {
     "npm:": "https://unpkg.com/",
-    "$fresh/": "https://deno.land/x/fresh@1.1.1/",
+    "$fresh/": "https://deno.land/x/fresh@1.1.2/",
     "preact": "https://esm.sh/preact@10.11.0",
     "preact/": "https://esm.sh/preact@10.11.0/",
     "preact-render-to-string": "https://esm.sh/*preact-render-to-string@5.2.4",
@@ -9,7 +9,8 @@
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.0.1",
     "twind": "https://esm.sh/twind@0.16.17",
     "twind/": "https://esm.sh/twind@0.16.17/",
-    "markdoc": "npm:@markdoc/markdoc",
+    "markdoc" : "https://esm.sh/@markdoc/markdoc@0.2.1",
+    "markdoc/" : "https://esm.sh/@markdoc/markdoc@0.2.1/",
     "$gfm": "https://deno.land/x/gfm@0.1.22/mod.ts"
   }
 }
