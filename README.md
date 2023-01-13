@@ -1,11 +1,5 @@
-# fresh project
+# Mandarin
+Mandarin is documentation template which using Markdoc and Fresh.
 
 ### Usage
-
-Start the project:
-
-```
-deno task start
-```
-
-This will watch the project directory and restart as necessary.
+This is a Fresh project, so you can deploy on Deno Deploy as a document site after cloning it and adding markdown files.
