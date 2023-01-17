@@ -1,7 +1,7 @@
-import { CSS } from "$gfm";
+import { gfm } from "../utils/markdown.ts";
 import { Handlers } from "$fresh/server.ts";
 
-const css = `${CSS}
+const css = `${gfm.CSS}
 `;
 
 export const handler: Handlers = {

@@ -17,6 +17,15 @@ Lists
 
 `Inline code`
 
+```javascript
+// Javascript
+function hello() {
+    console.log("hello, world");
+}
 ```
-Code fences
+```rust
+// Rust
+fn hello() {
+    println!("hello, world");
+}
 ```

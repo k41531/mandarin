@@ -3,7 +3,6 @@ import { Head } from "$fresh/runtime.ts";
 import { Page } from "../components/Page.tsx";
 import Header  from "../components/Header.tsx";
 import Sidebar  from "../components/Sidebar.tsx";
-
 interface Data {
   markdown: string;
 }

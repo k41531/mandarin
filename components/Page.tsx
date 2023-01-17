@@ -1,11 +1,7 @@
-import Markdoc from "markdoc";
-import React from "preact/compat";
+import { gfm } from '../utils/markdown.ts';
 
 export function Page(props: { doc:string }) {
-  const ast = Markdoc.parse(props.doc);
-  
-  const content = Markdoc.transform(ast);
-  
-  const html = Markdoc.renderers.react(content, React);  
-  return html;
+  const html = gfm.render(props.doc);  
+  // rome-ignore lint: gfm.render sanitized it.
+  return <div dangerouslySetInnerHTML={{__html: html}}/>;
 }
